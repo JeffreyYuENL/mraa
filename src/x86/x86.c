@@ -135,7 +135,7 @@ mraa_x86_platform()
 			    platform_type = MRAA_ADLINK_LEC_AL_AI;
 			    plat = mraa_lec_al_board();
 		    }
-		    else if ((strncasecmp(buffer, "LEC-AL", strlen("LEC-AL")) == 0)) {
+		    else if ((strncasecmp(buffer, "LEC-AL", strlen("LEC-AL")) == 0)||(strncasecmp(buffer, "LEC-EL", strlen("LEC-EL")) == 0)) {
 			    syslog(LOG_ERR, "LEC-AL IPi found. starting MRAA");
 			    platform_type = MRAA_ADLINK_LEC_AL;
 			    plat = mraa_lec_al_board();
